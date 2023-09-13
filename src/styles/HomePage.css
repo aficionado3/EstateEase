@@ -1,0 +1,98 @@
+.home-page {
+    font-family: 'Arial', sans-serif;
+    /* background: url('path-to-your-background-image.jpg') center/cover no-repeat; */
+    background: url('https://www.pexels.com/photo/photo-of-a-modern-house-1234567') center/cover no-repeat;
+
+    color: white;
+    min-height: 100vh;
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);  /* Dark overlay */
+}
+
+.main-section {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);  /* Dark overlay */
+}
+
+.steps-section {
+    display: flex;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    font-size: 2rem;
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.actions-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.testimonials-section {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.home-footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonials-section {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonials-carousel {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.testimonial {
+    flex: 0 0 auto;
+    padding: 20px;
+    /* box-sizing: border-box; */
+    width: 300px; /* Adjust based on your design preference */
+    border-radius: 10px;
+    margin: 10px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    /* color: black; */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+

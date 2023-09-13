@@ -28,7 +28,7 @@ function LandlordLogin() {
     };
 
     return (
-        <div>
+        <div className="login-container">
             <h2>Landlord Login</h2>
             <input 
                 type="text" 

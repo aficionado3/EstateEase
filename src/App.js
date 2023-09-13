@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Auth from './views/Auth';
 import PropertyListing from './views/PropertyListing';
 import AddProperty from './views/AddProperty';
+import LandlordLogin from './views/LandlordLogin';
+import HomePage from './views/HomePage';
 // ... import other views
 
 function App() {
@@ -12,8 +14,11 @@ function App() {
         <Route path="/auth" element={<Auth />} />
         <Route path="/properties" element={<PropertyListing />} />
         <Route path="/add-property" element={<AddProperty />} />
+        <Route path="/landlordlogin" element={<LandlordLogin />} />
+
         {/* ... add other routes */}
-        <Route path="/" element={<PropertyListing />} />
+        <Route path="/" element={<HomePage />} />
+        
       </Routes>
     </Router>
   );
