@@ -85,3 +85,20 @@ As you develop the frontend, you'll need to integrate with the blockchain or any
 Make sure to test your application regularly. You can use Jest (which comes bundled with CRA) or any other testing library of your choice.
 
 This is a basic structure to get you started. Depending on your requirements and functionalities, you might need to add or modify certain parts. Remember to commit your changes frequently and keep backups.
+
+
+
+
+
+
+
+
+
+
+
+Todo
+form for landlord to uplaods their images to 
+create rent page
+create buying page
+showroom booking
+

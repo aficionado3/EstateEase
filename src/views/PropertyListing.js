@@ -78,7 +78,7 @@ function PropertyListing({ type }) {
                     {showDetailsProperty === property.id ? (
                         <div>
                             <p className="property-description">{property.description}</p>
-                            <button onClick={() => setShowDetailsProperty(null)}>Hide Details</button>
+                            <button onClick={() => setShowDetailsProperty(null)} className='button1'>Hide Details</button>
                         </div>
                     ) : (
                         <button onClick={() => setShowDetailsProperty(property.id)}>More Details</button>
@@ -88,14 +88,14 @@ function PropertyListing({ type }) {
 
                     {isPropertyOwner ? (
                         <div>
-                            <button>List Property for Sale</button>
-                            <button>List Property for Rent</button>
+                            <button className='button1'>List Property for Sale</button>
+                            <button className='button1'>List Property for Rent</button>
                         </div>
                     ) : (
                         <div>
-                            <button>Buy</button>
-                            <button>Rent</button>
-                            <button>Book Showroom Walkthrough</button>
+                            <button className='button1'>Buy</button>
+                            <button className='button1' >Rent</button>
+                            <button className='button1'>Request a tour</button>
                         </div>
                     )}
                 </div>

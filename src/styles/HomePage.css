@@ -17,7 +17,7 @@
 
 .main-section {
     padding: 50px;
-    background: rgba(0, 0, 0, 0.5);  /* Dark overlay */
+    background: rgba(0, 0, 0, 0.5); 
 }
 
 .steps-section {
@@ -83,6 +83,20 @@ button:hover {
     white-space: nowrap;
     scroll-behavior: smooth;
 }
+
+.testimonials-carousel {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-20.3333%); }
+}
+
+
 
 .testimonial {
     flex: 0 0 auto;
