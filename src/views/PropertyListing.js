@@ -143,6 +143,7 @@ import '../styles/PropertyStyles.css';
 import properties from '../assets/properties';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
+import '../styles/PropertyOwner.css';
 
 function PropertyListing({ type }) {
     const placeholderImage = 'https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500';
@@ -152,10 +153,9 @@ function PropertyListing({ type }) {
     const [modalOpen, setModalOpen] = useState(false);
     const [currentProperty, setCurrentProperty] = useState(null);
     const [mainImage, setMainImage] = useState(null);
-    const [showAllReviews, setShowAllReviews] = useState(false); // State to control showing all reviews
+    const [showAllReviews, setShowAllReviews] = useState(false); 
     const [reviews, setReviews] = useState({});
-    const [showReviews, setShowReviews] = useState(false); // State to control showing reviews list
-
+    const [showReviews, setShowReviews] = useState(false); 
     const handleToggleReviewsDisplay = () => {
         setShowReviews(!showReviews);
     }

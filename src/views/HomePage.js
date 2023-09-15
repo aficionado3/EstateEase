@@ -1,15 +1,17 @@
 import React from 'react';
 import '../styles/HomePage.css';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 
 
 function HomePage() {
 
     return (
-        <div className="home-page">
-            <Navbar />
-
+        <div>
+              <Navbar />
+            <div className="home-page">
+          
             <section className="main-section">
                 <h2>Discover Your Next Home</h2>
 
@@ -60,6 +62,7 @@ function HomePage() {
             <footer className="home-footer">
                 <p>© 2023 Rent Hub. All Rights Reserved.</p>
             </footer>
+        </div>
         </div>
     );
 }

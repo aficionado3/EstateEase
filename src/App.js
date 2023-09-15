@@ -9,7 +9,7 @@ import Login from './views/Login'
 import SignUp from './views/SignUp';
 import RentProperties from './views/RentProperties';
 import BuyProperties from './views/BuyProperties';
-import PropertyOwnerListing from './views/PropertyOwnerListing'
+import PropertyOwner from './views/PropertyOwner'
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <Route path="/landlordlogin" element={<LandlordLogin />} />
         <Route path="/propertiesforrent" element={<RentProperties />} />
         <Route path="/propertiesforsale" element={<BuyProperties />} />
-        <Route path="/property-owner-listing" component={PropertyOwnerListing} />
+        <Route path="/property-owner" element={<PropertyOwner />} />
 
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
