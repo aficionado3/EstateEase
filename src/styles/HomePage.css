@@ -43,24 +43,24 @@
 .cta-container {
     /* background-color: #f4f4f4; */
     padding: 20px;
-    border-radius: 10px; /* Rounded corners for aesthetics */
-    text-align: center; /* Center the text and button */
-    margin: 20px 0; /* Space above and below the CTA container */
+    border-radius: 10px; 
+    text-align: center; 
+    margin: 20px 0;
 }
 
 .cta-button {
-    background-color: #007BFF; /* A shade of blue, you can adjust as needed */
-    color: white; /* White text */
+    background-color: #007BFF; 
+    color: white; 
     padding: 10px 20px;
     border-radius: 5px;
-    text-decoration: none; /* Remove underline from link */
-    display: inline-block; /* Allows you to set padding and margins */
-    margin-top: 10px; /* Space above the button */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none; 
+    display: inline-block; 
+    margin-top: 10px;
+    transition: background-color 0.3s ease; 
 }
 
 .cta-button:hover {
-    background-color: #0056b3; /* Darker blue for hover effect */
+    background-color: #0056b3;
 }
 
 button {
@@ -118,7 +118,7 @@ button:hover {
     flex: 0 0 auto;
     padding: 20px;
     /* box-sizing: border-box; */
-    width: 300px; /* Adjust based on your design preference */
+    width: 300px; 
     border-radius: 10px;
     margin: 10px;
     /* background-color: rgba(255, 255, 255, 0.8); */
