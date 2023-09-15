@@ -1,0 +1,162 @@
+/* Container for the entire login section */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg');
+    background-size: cover; /* Make sure the image covers the full area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+/* Comment out or remove this to avoid overlaying the gradient on the image 
+.login-container::before {
+    ...
+}
+*/
+
+/* Give depth to input fields and buttons */
+input, button {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Interactive hover effect */
+button:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Slight fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-container {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* Input field styling */
+input {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #007BFF;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* MetaMask or username separator */
+h3 {
+    color: #777;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+/* For better spacing between buttons */
+button + button {
+    margin-top: 10px;
+}
+
+/* 
+select {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 300px;
+    outline: none;
+    transition: border-color 0.3s;
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #007BFF;
+} */
+
+
+/* Styles for the dropdown */
+.role-select {
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 320px;
+    outline: none;
+    transition: border-color 0.3s, transform 0.3s;
+    background-color: #f4f4f4;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.2);
+}
+
+.role-select:focus {
+    border-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.role-select:hover {
+    transform: scale(1.02);
+}
+
+/* Making the dropdown arrow more appealing */
+.role-select::-ms-expand {
+    display: none;
+}
+
+.role-select:not([multiple]) {
+    padding-right: 30px;
+}
+
+.role-select:not([multiple])::-ms-value {
+    background: none;
+}
+
+.role-select:not([multiple])::before {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 10px;
+    line-height: 1;
+}

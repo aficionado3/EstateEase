@@ -12,7 +12,16 @@ function HomePage() {
             {/* Header */}
             <header className="home-header">
                 <h1>Rent Hub</h1>
-                <button><Link to="/landlordlogin">Landlord Login</Link></button>
+
+                <div className="header-actions">
+                    <span><Link to="/homepage"> Home </Link></span>
+                    <span><Link to="/propertiesforsale">Buy</Link></span>
+                    <span><Link to="/propertiesforrent">Rent</Link></span>
+                    <span><Link to="/properties">Properties</Link></span>
+                    <span><Link to="/login">Login</Link></span>
+                    <span><Link to="/signup">Sign Up</Link></span>
+
+                </div>
             </header>
 
             {/* Main Section */}
@@ -75,3 +84,4 @@ function HomePage() {
 }
 
 export default HomePage;
+

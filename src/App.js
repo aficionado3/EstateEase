@@ -5,7 +5,9 @@ import PropertyListing from './views/PropertyListing';
 import AddProperty from './views/AddProperty';
 import LandlordLogin from './views/LandlordLogin';
 import HomePage from './views/HomePage';
+import Login from './views/Login'
 // ... import other views
+
 
 function App() {
   return (
@@ -15,8 +17,9 @@ function App() {
         <Route path="/properties" element={<PropertyListing />} />
         <Route path="/add-property" element={<AddProperty />} />
         <Route path="/landlordlogin" element={<LandlordLogin />} />
+        
 
-        {/* ... add other routes */}
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<HomePage />} />
         
       </Routes>
