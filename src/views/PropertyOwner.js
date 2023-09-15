@@ -60,9 +60,6 @@ function PropertyOwner() {
         <div>
             <Navbar />
             <div className="container1">
-            
-            
-
             {showForm ? (
                 <div className="centered-form">
                     <h2>List Your Property</h2>
@@ -82,12 +79,14 @@ function PropertyOwner() {
                         <input type="text" name="country" placeholder="Country" value={propertyDetails.country} onChange={handleInputChange} />
                         <input type="number" name="bedrooms" placeholder="Number of Bedrooms" value={propertyDetails.bedrooms} onChange={handleInputChange} />
                         <input type="number" name="bathrooms" placeholder="Number of Bathrooms" value={propertyDetails.bathrooms} onChange={handleInputChange} />
+                        <input type="date" placeholder="Available Date" onChange={handleInputChange} />
                         <input type="file" name="image" onChange={handleImageChange} />
                         <button type="submit">List Property</button>
                     </form>
                 </div>
             ) : (
                 <>
+                    <div className='landlord'>
                     <p>Are you a property owner?</p>
                     {properties.length === 0 && (
                         <>
@@ -111,6 +110,7 @@ function PropertyOwner() {
                             <button onClick={() => setShowForm(true)}>Add Another Property</button>
                         </>
                     )}
+                    </div>
                 </>
             )}
         </div>

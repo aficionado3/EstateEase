@@ -1,15 +1,23 @@
 .home-page {
     font-family: 'Arial', sans-serif;
     /* background: url('path-to-your-background-image.jpg') center/cover no-repeat; */
-    background: url('https://www.pexels.com/photo/photo-of-a-modern-house-1234567') center/cover no-repeat;
+    /* background: url('https://www.pexels.com/photo/photo-of-a-modern-house-1234567') center/cover no-repeat; */
+    background: url('https://images.pexels.com/photos/7031708/pexels-photo-7031708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
 
     color: white;
-    min-height: 100vh;
+    min-height: 54vh;
+    /* background: url('https://images.pexels.com/photos/963580/pexels-photo-963580.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat; */
 }
 
 .main-section {
+    display: flex;
+    flex-direction: column;
     padding: 50px;
-    background: rgba(0, 0, 0, 0.5); 
+    color:black;
+    align-items: center;
+    align-content: center;
+    /* background: rgba(0, 0, 0, 0.5);  */
+    /* background: url('https://images.pexels.com/photos/2440471/pexels-photo-2440471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat; */
 }
 
 .steps-section {
@@ -46,6 +54,11 @@
     border-radius: 10px; 
     text-align: center; 
     margin: 20px 0;
+}
+
+.cta-content{
+    font-size: large;
+    font-weight: 900;
 }
 
 .cta-button {
@@ -85,12 +98,14 @@ button:hover {
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     text-align: center;
+    color: white;
 }
 
 .testimonials-section {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     text-align: center;
+    color: white;
 }
 
 .testimonials-carousel {

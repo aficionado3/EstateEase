@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import Web3 from 'web3';
 import '../styles/SignUp.css';
+import { useNavigate } from 'react-router-dom';
 
 function SignUp() {
+    const navigate = useNavigate();
     const [formData, setFormData] = useState({
         username: '',
         email: '',
@@ -37,6 +39,7 @@ function SignUp() {
         } else {
             alert('Please install MetaMask to use this feature!');
         }
+        navigate('/properties');
     }
 
     return (

@@ -1,5 +1,5 @@
 .property-dashboard {
-    background-image: linear-gradient(135deg, #f6f3ea 0%, #e9e9e7 100%);
+    /* background-image: linear-gradient(135deg, #f6f3ea 0%, #e9e9e7 100%); */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -43,6 +43,12 @@
     border-radius: 5px;
 }
 
+.landlord {
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 800;
+}
+
 
 .container1 {
     min-height: 100vh;
@@ -50,6 +56,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background: url('https://images.pexels.com/photos/6265937/pexels-photo-6265937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat; */
+
+    background: url('https://images.pexels.com/photos/8293778/pexels-photo-8293778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
 }
 
 .centered-form {
