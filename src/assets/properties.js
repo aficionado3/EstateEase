@@ -7,7 +7,8 @@ const properties = [
       price: '$1500 per month',
       image: 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
       availableDates: ['2023-10-10', '2023-10-15', '2023-10-20'],
-      owner: 'John Doe'
+      owner: 'John Doe',
+      type: 'rent'
     },
     {
       id: 2,
@@ -16,7 +17,8 @@ const properties = [
       price: '$2500 per month',
       image: 'https://images.pexels.com/photos/164516/pexels-photo-164516.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
       availableDates: ['2023-09-25', '2023-09-30'],
-      owner: 'Jane Smith'
+      owner: 'Jane Smith',
+      type: 'rent'
     },
     {
       id: 3,
@@ -25,7 +27,8 @@ const properties = [
       price: '$800 per month',
       image: 'https://images.pexels.com/photos/259962/pexels-photo-259962.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
       availableDates: ['2023-11-01', '2023-11-05', '2023-11-10'],
-      owner: 'Chris Johnson'
+      owner: 'Chris Johnson',
+      type: 'rent',
     },
     {
       id: 4,
@@ -34,7 +37,8 @@ const properties = [
       price: '$4000 per month',
       image: 'https://images.pexels.com/photos/279746/pexels-photo-279746.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
       availableDates: ['2023-12-01', '2023-12-10'],
-      owner: 'Emily Clark'
+      owner: 'Emily Clark',
+      type: 'rent',
     },
     {
         id: 5,
@@ -43,7 +47,8 @@ const properties = [
         price: '$5000 per month',
         image: 'https://images.pexels.com/photos/210602/pexels-photo-210602.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
         availableDates: ['2023-10-05', '2023-10-25'],
-        owner: 'Robert Brown'
+        owner: 'Robert Brown',
+        type: 'buy'
       },
       {
         id: 6,
@@ -52,7 +57,8 @@ const properties = [
         price: '$1300 per month',
         image: 'https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
         availableDates: ['2023-11-11', '2023-11-15'],
-        owner: 'Alice Green'
+        owner: 'Alice Green',
+        type: 'buy'
       },
       {
         id: 7,
@@ -61,7 +67,8 @@ const properties = [
         price: '$1100 per month',
         image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
         availableDates: ['2023-09-18', '2023-09-30'],
-        owner: 'Michael White'
+        owner: 'Michael White',
+        type: 'buy'
       },
       {
         id: 8,
@@ -70,7 +77,8 @@ const properties = [
         price: '$2000 per month',
         image: 'https://images.pexels.com/photos/2016910/pexels-photo-2016910.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
         availableDates: ['2023-11-20', '2023-11-30'],
-        owner: 'Sarah Williams'
+        owner: 'Sarah Williams',
+        type: 'buy',
       },
       {
         id: 9,
@@ -79,7 +87,8 @@ const properties = [
         price: '$1700 per month',
         image: 'https://images.pexels.com/photos/259597/pexels-photo-259597.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
         availableDates: ['2023-10-12', '2023-10-22'],
-        owner: 'David Jones'
+        owner: 'David Jones',
+        type: 'buy',
       },
       {
         id: 10,
@@ -88,7 +97,8 @@ const properties = [
         price: '$2200 per month',
         image: 'https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
         availableDates: ['2023-10-08', '2023-10-18'],
-        owner: 'Linda Davis'
+        owner: 'Linda Davis',
+        type: 'buy',
       },
       {
         id: 11,
@@ -97,7 +107,8 @@ const properties = [
         price: '$2400 per month',
         image: 'https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
         availableDates: ['2023-12-05', '2023-12-15'],
-        owner: 'James Wilson'
+        owner: 'James Wilson',
+        type: 'buy',
       },
       {
         id: 12,
@@ -106,7 +117,8 @@ const properties = [
         price: '$1400 per month',
         image: 'https://images.pexels.com/photos/1082358/pexels-photo-1082358.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
         availableDates: ['2023-09-15', '2023-09-25'],
-        owner: 'Mary Johnson'
+        owner: 'Mary Johnson',
+        type: 'rent'
       }
       
 ];

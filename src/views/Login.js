@@ -101,33 +101,31 @@ function Login() {
         navigate('/properties');
     };
 
-    // ... (Other parts of your code)
+    return (
+        <div className="login-container">
+            <div className="form-box">
+                <h2>Login</h2>
+                <input
+                    type="text"
+                    placeholder="Username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
+                <button onClick={handleLogin}>Login</button>
 
-return (
-    <div className="login-container">
-        <div className="form-box">
-            <h2>Login</h2>
-            <input 
-                type="text" 
-                placeholder="Username" 
-                value={username} 
-                onChange={(e) => setUsername(e.target.value)}
-            />
-            <input 
-                type="password" 
-                placeholder="Password" 
-                value={password} 
-                onChange={(e) => setPassword(e.target.value)}
-            />
-            <button onClick={handleLogin}>Login</button>
-            
-            <div>
-                <h3>OR</h3>
-                <button onClick={loginWithMetaMask}>Login with MetaMask</button>
+                <div>
+                    <h3>OR</h3>
+                    <button onClick={loginWithMetaMask}>Login with MetaMask</button>
+                </div>
             </div>
         </div>
-    </div>
-);
+    );
 
 }
 

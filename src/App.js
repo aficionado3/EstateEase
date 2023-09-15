@@ -8,7 +8,7 @@ import HomePage from './views/HomePage';
 import Login from './views/Login'
 import SignUp from './views/SignUp';
 import RentProperties from './views/RentProperties';
-// ... import other views
+import BuyProperties from './views/BuyProperties';
 
 
 function App() {
@@ -19,11 +19,8 @@ function App() {
         <Route path="/properties" element={<PropertyListing />} />
         <Route path="/add-property" element={<AddProperty />} />
         <Route path="/landlordlogin" element={<LandlordLogin />} />
-        
         <Route path="/propertiesforrent" element={<RentProperties />} />
-        {/* <Route path="/propertiesforsale" element={<RentProperties />} /> */}
-        
-
+        <Route path="/propertiesforsale" element={<BuyProperties />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<HomePage />} />

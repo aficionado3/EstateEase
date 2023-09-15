@@ -52,10 +52,11 @@ function PropertyListing({ type }) {
     const handleImageError = (e) => {
         e.target.src = placeholderImage;
     }
-
+    
     const filteredProperties = properties
-        .filter(property => property.type === type)
-        .filter(property => property.title.toLowerCase().includes(searchTerm.toLowerCase()));
+    .filter(property => (type ? property.type === type : true))
+    .filter(property => property.title.toLowerCase().includes(searchTerm.toLowerCase()));
+
 
     return (
         <div>
