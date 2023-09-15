@@ -47,8 +47,20 @@
     font-weight: 600;
     margin: 10px 0;
     padding: 0 10px;
+    padding-left: 20px;
 }
 
+.property-price {
+    padding-left: 20px;
+    align-content: center;
+    align-items: center;
+}
+
+.property.address {
+    padding-left: 20px;
+    align-content: center;
+    align-items: center;
+}
 .property-description {
     font-size: 14px;
     color: #555;
@@ -89,3 +101,83 @@
 button:hover {
     background-color: #45a049;
 }
+
+
+.property-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Black with 70% opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    width: 40%; /* Or whatever you prefer */
+    height: 80%;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-left {
+    flex: 1;
+    overflow: auto; /* If there are many images */
+    padding: 10px;
+}
+
+.modal-left img {
+    width: 100%; /* Makes images responsive */
+    margin-bottom: 10px; /* Space between images */
+}
+
+.modal-right {
+    flex: 1.5; /* Give it more width than left, adjust as necessary */
+    padding: 20px;
+    overflow: auto; /* In case there is a lot of text */
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.modal-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.property-modal .modal-content {
+    position: relative; /* Ensure the modal content is relative */
+    /* ... other styles ... */
+}
+
+.close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    /* background-color: #eee; */
+    border-radius: 80%;
+    padding: 5px;
+    line-height: 1;
+    transition: background-color 0.3s;
+}
+
+.close-icon:hover {
+    background-color: #ddd;
+}
+
