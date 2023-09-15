@@ -4,26 +4,55 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);  /* Dark overlay */
+    background: white; 
 }
 
 
-/* Example CSS */
 .navbar {
     display: flex;
-    justify-content: space-around;  /* Evenly distribute navbar items */
-    padding: 10px 0;  /* Padding for vertical spacing */
+    justify-content: space-around;  
+    padding: 10px 0; 
 }
 
 .nav-item {
-    margin: 0 10px;  /* Spacing between navbar items */
+    margin: 0 10px;
 }
 
 .nav-item a {
-    text-decoration: none;  /* Remove underline */
-    color: inherit;  /* Inherit color from parent, change as needed */
+    text-decoration: none;  
+    color: inherit;  
 }
 
 .nav-item a:hover {
-    text-decoration: underline;  /* Underline on hover for better UX */
+    text-decoration: underline;  
+} 
+
+
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }

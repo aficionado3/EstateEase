@@ -8,19 +8,7 @@ function HomePage() {
 
     return (
         <div className="home-page">
-
-            {/* Header */}
-            <header className="home-header">
-                <h1>Rent Hub</h1>
-                <nav className="navbar">
-                    <span className="nav-item"><Link to="/">Home</Link></span>
-                    <span className="nav-item"><Link to="/propertiesforsale">Buy</Link></span>
-                    <span className="nav-item"><Link to="/propertiesforrent">Rent</Link></span>
-                    <span className="nav-item"><Link to="/properties">Properties</Link></span>
-                    <span className="nav-item"><Link to="/login">Login</Link></span>
-                    <span className="nav-item"><Link to="/signup">Sign Up</Link></span>
-                </nav>
-            </header>
+            <Navbar />
 
             <section className="main-section">
                 <h2>Discover Your Next Home</h2>

@@ -142,6 +142,7 @@ import React, { useState } from 'react';
 import '../styles/PropertyStyles.css';
 import properties from '../assets/properties';
 import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
 
 function PropertyListing({ type }) {
     const placeholderImage = 'https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500';
@@ -197,17 +198,8 @@ function PropertyListing({ type }) {
 
     return (
         <div>
-            <header className="home-header">
-                <h1>Rent Hub</h1>
-                <nav className="navbar">
-                    <span className="nav-item"><Link to="/">Home</Link></span>
-                    <span className="nav-item"><Link to="/propertiesforsale">Buy</Link></span>
-                    <span className="nav-item"><Link to="/propertiesforrent">Rent</Link></span>
-                    <span className="nav-item"><Link to="/properties">Properties</Link></span>
-                    <span className="nav-item"><Link to="/login">Login</Link></span>
-                    <span className="nav-item"><Link to="/signup">Sign Up</Link></span>
-                </nav>
-            </header>
+
+            <Navbar />
             <div className="property-container">
                 <div className="search-container">
                     <input
