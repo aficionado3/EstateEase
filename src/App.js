@@ -6,6 +6,7 @@ import AddProperty from './views/AddProperty';
 import LandlordLogin from './views/LandlordLogin';
 import HomePage from './views/HomePage';
 import Login from './views/Login'
+import SignUp from './views/SignUp';
 // ... import other views
 
 
@@ -20,6 +21,7 @@ function App() {
         
 
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<HomePage />} />
         
       </Routes>

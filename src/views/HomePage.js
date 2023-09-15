@@ -12,43 +12,36 @@ function HomePage() {
             {/* Header */}
             <header className="home-header">
                 <h1>Rent Hub</h1>
-
-                <div className="header-actions">
-                    <span><Link to="/homepage"> Home </Link></span>
-                    <span><Link to="/propertiesforsale">Buy</Link></span>
-                    <span><Link to="/propertiesforrent">Rent</Link></span>
-                    <span><Link to="/properties">Properties</Link></span>
-                    <span><Link to="/login">Login</Link></span>
-                    <span><Link to="/signup">Sign Up</Link></span>
-
-                </div>
+                <nav className="navbar">
+                    <span className="nav-item"><Link to="/">Home</Link></span>
+                    <span className="nav-item"><Link to="/propertiesforsale">Buy</Link></span>
+                    <span className="nav-item"><Link to="/propertiesforrent">Rent</Link></span>
+                    <span className="nav-item"><Link to="/properties">Properties</Link></span>
+                    <span className="nav-item"><Link to="/login">Login</Link></span>
+                    <span className="nav-item"><Link to="/signup">Sign Up</Link></span>
+                </nav>
             </header>
 
-            {/* Main Section */}
             <section className="main-section">
                 <h2>Discover Your Next Home</h2>
 
+                <div className="cta-container">
+                    <div className="cta-content">
+                        <p>Find the perfect property tailored to your needs. Start your journey with Rent Hub today!</p>
+                        <Link to="/signup" className="cta-button">Get Started</Link>
+                    </div>
+                    {/* <img src="https://www.pexels.com/photo/joyful-young-couple-dancing-after-moving-in-new-purchased-apartment-7203879/" alt="Happy Client" className="cta-image" /> */}
+                </div>
+
                 <div className="steps-section">
-                    {/* This is a sample step, repeat for others */}
                     <div className="step">
                         <div className="icon">🏠</div>
-                        {/* <h3>Register or Log in</h3> */}
-
                         <h3><Link to="/properties">View Available Properties</Link></h3>
                     </div>
                 </div>
-
-                <div className="actions-section">
-                    <button>Buy a Property</button>
-                    <button>Rent a Property</button>
-                </div>
-
-                <div className="landlord-section">
-                    <h2>Are you a landlord?</h2>
-                    <p>List your property with us today!</p>
-                    <button>Sign in</button>
-                </div>
             </section>
+
+
 
             {/* Testimonials */}
             <section className="testimonials-section">

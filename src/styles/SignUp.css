@@ -1,0 +1,94 @@
+
+/* Overall container */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: rgb(34, 32, 32); /* For better contrast against the gradient */
+    padding-top: 180px;
+    /* background: url('https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat; */
+    background: url('https://images.pexels.com/photos/453201/pexels-photo-453201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+
+}
+
+
+/* Styling form elements */
+form {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 450px;
+    padding-right: 60px;
+  
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Alternate signup methods */
+.alternate-signup {
+    margin-top: 25px;
+    /* color: #fff; */
+}
+
+.alternate-signup button {
+    background-color: #f39c12;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+    /* color: rgb(21, 20, 20); */
+    margin-top: 10px;
+}
+
+.alternate-signup button:hover {
+    background-color: #e67e22;
+}
+
+/* Existing account prompt */
+.existing-account-query {
+    margin-top: 25px;
+}
+
+.existing-account-query a {
+    color: #3d4cbf;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.existing-account-query a:hover {
+    text-decoration: underline;
+    color:  #3d4cbf;
+}

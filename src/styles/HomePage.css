@@ -15,6 +15,28 @@
     background: rgba(0, 0, 0, 0.5);  /* Dark overlay */
 }
 
+
+/* Example CSS */
+.navbar {
+    display: flex;
+    justify-content: space-around;  /* Evenly distribute navbar items */
+    padding: 10px 0;  /* Padding for vertical spacing */
+}
+
+.nav-item {
+    margin: 0 10px;  /* Spacing between navbar items */
+}
+
+.nav-item a {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;  /* Inherit color from parent, change as needed */
+}
+
+.nav-item a:hover {
+    text-decoration: underline;  /* Underline on hover for better UX */
+}
+
+
 .main-section {
     padding: 50px;
     background: rgba(0, 0, 0, 0.5); 
@@ -45,6 +67,30 @@
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
+}
+
+
+.cta-container {
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    text-align: center; /* Center the text and button */
+    margin: 20px 0; /* Space above and below the CTA container */
+}
+
+.cta-button {
+    background-color: #007BFF; /* A shade of blue, you can adjust as needed */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline from link */
+    display: inline-block; /* Allows you to set padding and margins */
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
 }
 
 button {
