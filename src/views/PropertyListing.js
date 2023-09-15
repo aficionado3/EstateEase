@@ -151,7 +151,18 @@ function PropertyListing({ type }) {
     const [modalOpen, setModalOpen] = useState(false);
     const [currentProperty, setCurrentProperty] = useState(null);
     const [mainImage, setMainImage] = useState(null);
+    const [showAllReviews, setShowAllReviews] = useState(false); // State to control showing all reviews
     const [reviews, setReviews] = useState({});
+    const [showReviews, setShowReviews] = useState(false); // State to control showing reviews list
+
+    const handleToggleReviewsDisplay = () => {
+        setShowReviews(!showReviews);
+    }
+
+    const handleToggleReviews = () => {
+        setShowAllReviews(!showAllReviews);
+    }
+
 
     const handleImageError = (e) => {
         e.target.src = placeholderImage;
@@ -178,6 +189,12 @@ function PropertyListing({ type }) {
         });
     }
 
+    // const reviews = {
+    //     "propertyId_1": [{ comment: "Great place!", rating: 5 }, { comment: "Average stay", rating: 3 }],
+    //     "propertyId_2": []
+    //     // ...
+    // };
+
     return (
         <div>
             <header className="home-header">
@@ -201,19 +218,6 @@ function PropertyListing({ type }) {
                     />
                 </div>
                 {filteredProperties.map((property) => (
-                    // <div className="property-card" key={property.id}>
-                    //     <img
-                    //         src={property.image}
-                    //         alt={property.title}
-                    //         className="property-image"
-                    //         onError={handleImageError}
-                    //         onClick={() => handleImageClick(property, property.image)}
-                    //         style={{cursor: 'pointer'}}
-                    //     />
-                    //     <h3 className="property-title">{property.title}</h3>
-                    //     <p className="property-price">{property.price}</p>
-                    //     <p className="property-owner">Owner: {property.owner}</p>
-                    // </div>
                     <div className="property-card" key={property.id}>
                         <img
                             src={property.image}
@@ -272,33 +276,28 @@ function PropertyListing({ type }) {
                                         <button className='button1'>Request a tour</button>
                                         <button className='button1'>FAQ</button>
                                     </div>
-
-
                                 )
-
-                                
                             )}
+                            <div className="reviews-section">
+                                <h3 onClick={handleToggleReviewsDisplay}>Reviews for {currentProperty.title}</h3>
 
-<div className="reviews-section">
-                            <h3>Reviews</h3>
-                            {reviews[currentProperty.id] && reviews[currentProperty.id].map((review, index) => (
-                                <div key={index} className="review">
-                                    <p>{review.comment}</p>
-                                    <p>Rating: {review.rating}</p>
-                                </div>
-                            ))}
-                            <h4>Add a Review</h4>
-                            <textarea placeholder="Write your review..."></textarea> {/* Can use controlled components */}
-                            <select> {/* Dropdown for 1-5 rating */}
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                            <button onClick={() => handleAddReview(currentProperty.id, { comment: "...", rating: "..." })}>Submit Review</button>
+                                {showReviews && (
+                                    <>
+                                        {reviews[currentProperty.id] && reviews[currentProperty.id].length > 0 ? (
+                                            reviews[currentProperty.id].map((review, index) => (
+                                                <div key={index} className="review">
+                                                    <p>{review.comment}</p>
+                                                    <p>Rating: {review.rating}</p>
+                                                </div>
+                                            ))
+                                        ) : (
+                                            <p>No reviews for this property or property owner.</p>
+                                        )}
+                                    </>
+                                )}
+                            </div>
                         </div>
-                        </div>
+
                     </div>
                 </div>
             )}
