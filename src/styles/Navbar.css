@@ -1,0 +1,29 @@
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);  /* Dark overlay */
+}
+
+
+/* Example CSS */
+.navbar {
+    display: flex;
+    justify-content: space-around;  /* Evenly distribute navbar items */
+    padding: 10px 0;  /* Padding for vertical spacing */
+}
+
+.nav-item {
+    margin: 0 10px;  /* Spacing between navbar items */
+}
+
+.nav-item a {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;  /* Inherit color from parent, change as needed */
+}
+
+.nav-item a:hover {
+    text-decoration: underline;  /* Underline on hover for better UX */
+}

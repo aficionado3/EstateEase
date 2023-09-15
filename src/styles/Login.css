@@ -11,6 +11,7 @@
     background-position: center; /* Center the image */
     background-repeat: no-repeat; 
     position: relative;
+    align-items: center;
 }
 
 /* Comment out or remove this to avoid overlaying the gradient on the image 
@@ -92,26 +93,6 @@ button + button {
     margin-top: 10px;
 }
 
-/* 
-select {
-    margin-bottom: 15px;
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    width: 300px;
-    outline: none;
-    transition: border-color 0.3s;
-    background-color: #f4f4f4;
-    color: #333;
-    cursor: pointer;
-}
-
-select:focus {
-    border-color: #007BFF;
-} */
-
-
 /* Styles for the dropdown */
 .role-select {
     margin-bottom: 15px;
@@ -160,3 +141,17 @@ select:focus {
     font-size: 10px;
     line-height: 1;
 }
+
+
+.form-box {
+    display: flex;                /* Makes it a flex container */
+    flex-direction: column;       /* Stack children vertically */
+    align-items: center;          /* Align children horizontally to the center */
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);  /* semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
