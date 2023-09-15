@@ -151,6 +151,7 @@ function PropertyListing({ type }) {
     const [modalOpen, setModalOpen] = useState(false);
     const [currentProperty, setCurrentProperty] = useState(null);
     const [mainImage, setMainImage] = useState(null);
+    const [reviews, setReviews] = useState({});
 
     const handleImageError = (e) => {
         e.target.src = placeholderImage;
