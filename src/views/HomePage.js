@@ -17,7 +17,7 @@ function HomePage() {
 
                     <div className="cta-container">
                         <div className="cta-content">
-                            <p> Find the perfect property tailored to your needs. Start your journey with Rent Hub today!</p>
+                            <p> Find the perfect property tailored to your needs. Start your journey with EstateEase today!</p>
                             <Link to="/signup" className="cta-button">Get Started</Link>
                         </div>
                         {/* <img src="https://www.pexels.com/photo/joyful-young-couple-dancing-after-moving-in-new-purchased-apartment-7203879/" alt="Happy Client" className="cta-image" /> */}
@@ -58,7 +58,7 @@ function HomePage() {
 
                    {/* Footer */}
             <footer className="home-footer">
-                    <p>© 2023 Rent Hub. All Rights Reserved.</p>
+                    <p>© 2023 EstateEase. All Rights Reserved.</p>
                 </footer>
         </div>
     );
