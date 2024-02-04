@@ -1,10 +1,8 @@
 .home-page {
     font-family: 'Arial', sans-serif;
-    /* background: url('path-to-your-background-image.jpg') center/cover no-repeat; */
-    /* background: url('https://www.pexels.com/photo/photo-of-a-modern-house-1234567') center/cover no-repeat; */
-    background: url('/src/assets/jonathan-mueller-rFuSb31DIA0-unsplash.jpg') center/cover no-repeat;
+    background: url('/src/assets/home.jpg') center/cover no-repeat;
 
-    color: beige;
+    color: white;
     min-height: 54vh;
     /* background: url('https://images.pexels.com/photos/963580/pexels-photo-963580.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat; */
 }
@@ -16,7 +14,7 @@
     color:black;
     align-items: center;
     align-content: center;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.1);
     /* background: url('https://images.pexels.com/photos/2440471/pexels-photo-2440471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat; */
 }
 
@@ -29,12 +27,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 .icon {
     font-size: 2rem;
-    background: white;
     color: black;
     padding: 10px;
     border-radius: 50%;
@@ -57,7 +54,8 @@
 }
 
 .home-content{
-    font-size: large;
+    color: black;
+    font-size: larger;
     font-weight: 900;
 }
 
@@ -88,12 +86,6 @@ button {
 button:hover {
     background: rgba(255, 255, 255, 1);
 }
-
-.testimonials-section {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-}
-
 .home-footer {
     background: rgba(0, 0, 0, 0.8);
     padding: 20px;

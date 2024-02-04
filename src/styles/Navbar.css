@@ -3,13 +3,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: beige;
+    background: white;
     border-radius: 5px; 
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 30px;
 }
 
 
 .navbar {
+    font-size: 20px;
     display: flex;
+    background: white;
     justify-content: space-around;  
     padding: 10px 0; 
 }
@@ -20,12 +27,12 @@
 
 .nav-item a {
     text-decoration: none;  
-    color: inherit;  
+    color: black;  
 }
 
 .nav-item a:hover {
     text-decoration: underline;
-    transition: text-decoration 0.3S ease;  
+    transition: text-decoration 1s ease;  
 } 
 
 

@@ -6,11 +6,11 @@
     align-items: center;
     padding: 50px;
     height: 100vh;
-    font-family: Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(34, 32, 32); /* For better contrast against the gradient */
     padding-top: 180px;
     /* background: url('https://images.pexels.com/photos/1115804/pexels-photo-1115804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat; */
-    background: url('https://images.pexels.com/photos/453201/pexels-photo-453201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+    background: url('/src/assets/signup.jpg') center/cover no-repeat;
 
 }
 
@@ -41,7 +41,7 @@ form input {
 form button {
     width: 100%;
     padding: 14px;
-    background-color: #4caf50;
+    background-color: #007BFF;
     border: none;
     color: white;
     font-size: 16px;
@@ -51,7 +51,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #0050a7;
 }
 
 /* Alternate signup methods */

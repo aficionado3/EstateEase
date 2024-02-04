@@ -58,14 +58,16 @@
     align-items: center;
     /* background: url('https://images.pexels.com/photos/6265937/pexels-photo-6265937.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat; */
 
-    background: url('https://images.pexels.com/photos/8293778/pexels-photo-8293778.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+    background: url('/src/assets/properties2.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .centered-form {
     width: 80%;
     max-width: 500px;
     padding: 20px;
-    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 

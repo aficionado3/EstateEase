@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: 'Arial', sans-serif;
-    background-image: url('https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg');
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url('/src/assets/11785899_4826435.jpg');
     background-size: cover; /* Make sure the image covers the full area */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; 
