@@ -3,7 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: white; 
+    background: beige;
+    border-radius: 5px; 
 }
 
 
@@ -23,7 +24,8 @@
 }
 
 .nav-item a:hover {
-    text-decoration: underline;  
+    text-decoration: underline;
+    transition: text-decoration 0.3S ease;  
 } 
 
 

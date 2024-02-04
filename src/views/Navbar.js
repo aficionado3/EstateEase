@@ -8,7 +8,7 @@ function Navbar() {
     return (
 
         <header className="home-header">
-        <h1>EstateEase</h1>
+        <h1>SmartEstateSpace</h1>
         <nav className="navbar">
             <span className="nav-item"><Link to="/">Home</Link></span>
             <span className="nav-item"><Link to="/properties">Properties</Link></span>

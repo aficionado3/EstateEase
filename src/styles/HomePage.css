@@ -2,9 +2,9 @@
     font-family: 'Arial', sans-serif;
     /* background: url('path-to-your-background-image.jpg') center/cover no-repeat; */
     /* background: url('https://www.pexels.com/photo/photo-of-a-modern-house-1234567') center/cover no-repeat; */
-    background: url('https://images.pexels.com/photos/7031708/pexels-photo-7031708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+    background: url('/src/assets/jonathan-mueller-rFuSb31DIA0-unsplash.jpg') center/cover no-repeat;
 
-    color: white;
+    color: beige;
     min-height: 54vh;
     /* background: url('https://images.pexels.com/photos/963580/pexels-photo-963580.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat; */
 }
@@ -16,7 +16,7 @@
     color:black;
     align-items: center;
     align-content: center;
-    /* background: rgba(0, 0, 0, 0.5);  */
+    background: rgba(0, 0, 0, 0.5);
     /* background: url('https://images.pexels.com/photos/2440471/pexels-photo-2440471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat; */
 }
 
@@ -48,7 +48,7 @@
 }
 
 
-.cta-container {
+.home-container {
     /* background-color: #f4f4f4; */
     padding: 20px;
     border-radius: 10px; 
@@ -56,12 +56,12 @@
     margin: 20px 0;
 }
 
-.cta-content{
+.home-content{
     font-size: large;
     font-weight: 900;
 }
 
-.cta-button {
+.start-button {
     background-color: #007BFF; 
     color: white; 
     padding: 10px 20px;
@@ -72,7 +72,7 @@
     transition: background-color 0.3s ease; 
 }
 
-.cta-button:hover {
+.start-button:hover {
     background-color: #0056b3;
 }
 
@@ -100,44 +100,3 @@ button:hover {
     text-align: center;
     color: white;
 }
-
-.testimonials-section {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
-
-.testimonials-carousel {
-    display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-}
-
-.testimonials-carousel {
-    display: flex;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: marquee 20s linear infinite;
-}
-
-@keyframes marquee {
-    0%   { transform: translateX(0%); }
-    100% { transform: translateX(-20.3333%); }
-}
-
-
-
-.testimonial {
-    flex: 0 0 auto;
-    padding: 20px;
-    /* box-sizing: border-box; */
-    width: 300px; 
-    border-radius: 10px;
-    margin: 10px;
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    /* color: black; */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
