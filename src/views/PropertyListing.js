@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 import '../styles/PropertyOwner.css';
 
 function PropertyListing({ type }) {
-    const placeholderImage = '/src/assets/properties2.jpg';
+    const placeholderImage = 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500';
 
     const [searchTerm, setSearchTerm] = useState('');
     const [isPropertyOwner, setIsPropertyOwner] = useState(false);

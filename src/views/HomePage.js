@@ -17,7 +17,7 @@ function HomePage() {
 
                     <div className="home-container">
                         <div className="home-content">
-                            <p>Real Estate on the Blockchain: Secure, Transparent, and Efficient.</p>
+                            <p>Smart Estate Space: Automating and Securing Real Estate Transactions</p>
                             <Link to="/signup" className="start-button">Get Started</Link>
                         </div>
                     </div>
