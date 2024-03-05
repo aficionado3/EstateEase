@@ -14,6 +14,7 @@ function Navbar() {
             <span className="nav-item"><Link to="/properties">Properties</Link></span>
             <span className="nav-item"><Link to="/propertiesforsale">Buy</Link></span>
             <span className="nav-item"><Link to="/propertiesforrent">Rent</Link></span>
+            <span className='nav-item'><Link to="/reporting">feedback</Link></span>
             <div className="nav-item dropdown">
                 <button onClick={() => setDropdownOpen(!dropdownOpen)}>Account</button>
                 {/* <span onClick={() => setDropdownOpen(!dropdownOpen)} className="icon">👤</span> */}
